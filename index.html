@@ -10,11 +10,47 @@ a:hover{text-decoration:none}
 </head>
 
 <body bgcolor="#68A2B4">
-	<img src="image/FL@216.png" width="50" height="auto" alt="网络似乎出现了点问题"/>
-	<h1 class='hh' style="font-size:35px";><font style="font-family:">恩社六班</font></h1>
+	<table width="200" border="0">
+  <tbody>
+    <tr>
+      <td><img src="image/FL@216.png" width="50" height="auto" alt="？"/></td>
+		<td><h1>恩社六班</h1></td>
+    </tr>
+  </tbody>
+</table>
 <main class="0" id="001" style="font-size: 18px">欢迎来到广州市培正中学恩社六班官方网站！</main>
-	<a href="./timetable.html" target="new">课程表</a>
-	<a href="./notifications.html" target="new">通知</a>
-	
+	<table width="auto" border="0">
+  <tbody>
+    <tr>
+		<td><a href="./timetable.html" target="new"><img src="image/index/timetable.png" height="50"></img></a></td>
+      <td><a href="./notifications.html" target="new"><img src="image/index/notifications.png" height="50"></a></td>
+    </tr>
+  </tbody>
+</table>
 </body>
+<body>
+中考倒计时：<div id="CountMsg" class="HotDate">
+<span id="t_d">00天</span>
+<span id="t_h">00时</span>
+<span id="t_m">00分</span>
+<span id="t_s">00秒</span>
+</div>
+</body>
+<script type="text/javascript">
+function getRTime(){
+var EndTime = new Date('2021/06/18 08:00:00'); //截止时间
+var NowTime = new Date();
+var t = EndTime.getTime() - NowTime.getTime();
+var d=Math.floor(t/1000/60/60/24);
+var h=Math.floor(t/1000/60/60%24);
+var m=Math.floor(t/1000/60%60);
+var s=Math.floor(t/1000%60);
+document.getElementById("t_d").innerHTML = d + "天";
+document.getElementById("t_h").innerHTML = h + "时";
+document.getElementById("t_m").innerHTML = m + "分";
+document.getElementById("t_s").innerHTML = s + "秒";
+}
+setInterval(getRTime,1000);
+</script>
+	</body>
 </html>
