@@ -22,37 +22,25 @@ a:hover{text-decoration:none}
 	<table width="auto" border="0">
   <tbody>
     <tr>
-		<td><a href="./timetable.html" target="new"><img src="image/index/timetable.png" height="50"></img></a></td>
-      <td><a href="./notifications.html" target="new"><img src="image/index/notifications.png" height="50"></a></td>
-      <td><a href="./schedule.html" target="new">日程表</a></td>
+		<td><a href="./timetable.html" target="new"><img src="image/index/timetable.png" height="100%"></img></a></td>
+      <td><a href="./notifications.html" target="new"><img src="image/index/notifications.png" height="100%"></a></td>
+      <td><a href="./schedule.html" target="new"><img src="image/index/schedule.html.png" height="100%"></a></td>
     </tr>
   </tbody>
 </table>
-</body>
 <body>
-中考倒计时：<div id="CountMsg" class="HotDate">
-<span id="t_d">00天</span>
-<span id="t_h">00时</span>
-<span id="t_m">00分</span>
-<span id="t_s">00秒</span>
-</div>
+	<table width="auto" border="0">
+  <tbody>
+    <tr>
+      <td>今日文件:</td>
+		<td><a href="./preview_1.html" target="new">恩社六班55届校运会出场音乐</a></td>
+		<tr></tr>
+		<td>今日媒体：</td>
+	  <td><a href="player_01.html">lqq中午の广播</a></td>
+    </tr>
+  </tbody>
+</table>
+
 </body>
-<script type="text/javascript">
-function getRTime(){
-var EndTime = new Date('2021/06/18 08:00:00'); //截止时间
-var NowTime = new Date();
-var t = EndTime.getTime() - NowTime.getTime();
-var d=Math.floor(t/1000/60/60/24);
-var h=Math.floor(t/1000/60/60%24);
-var m=Math.floor(t/1000/60%60);
-var s=Math.floor(t/1000%60);
-document.getElementById("t_d").innerHTML = d + "天";
-document.getElementById("t_h").innerHTML = h + "时";
-document.getElementById("t_m").innerHTML = m + "分";
-document.getElementById("t_s").innerHTML = s + "秒";
-}
-setInterval(getRTime,1000);
-</script>
-<a href="./preview_1.html" target="new">恩社六班55届校运会班服设计稿</a>
-	</body>
+</body>
 </html>
