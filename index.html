@@ -16,8 +16,16 @@ src: url('fonts/55.ttf');
 }
 p {
 font-family: '55';
-font-size: 45px;
 		}
+</style>
+	
+    <style> 
+
+@font-face
+{
+font-family: 'ff';
+src: url('fonts/ff.ttf');
+}
 </style>
 </head>
 
@@ -72,7 +80,7 @@ hrsold=Math.floor(e_hrsold);
 e_minsold=(e_hrsold-hrsold)*60;
 minsold=Math.floor((e_hrsold-hrsold)*60);
 seconds=Math.floor((e_minsold-minsold)*60);
-span_dt_dt.innerHTML="<font size=6>距中考还有：</font><align=center><p><font color=#8888FF><p><font  size=8>"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒"+"<br></font><br></font>" ; // 这里你自己改。就是倒计时的样式，字体大小size=4 颜色是color
+span_dt_dt.innerHTML="<font size=6 face='ff'>距中考还有：</font><font size=8 face='ff'>"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒"+"<br></font><br>" ; // 这里你自己改。就是倒计时的样式，字体大小size=4 颜色是color
 }
 show_date_time();
 
