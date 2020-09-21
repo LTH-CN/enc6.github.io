@@ -1,102 +1,191 @@
 <!doctype html>
+
 <html>
+
 <head>
+
 <meta charset="utf-8">
+
 <title>首页-恩社六班</title>
-	<style> 
-a{text-decoration:none} 
+
+	<style> a{text-decoration:none} 
+
 a:hover{text-decoration:none}
+
 </style> 
+
 	<style> 
 
 @font-face
+
 {
+
 font-family: '55';
+
 src: url('fonts/55.ttf');
+
 }
+
 p {
+
 font-family: '55';
+
 font-size:35px;
+
 		}
+
 </style>
+
 	
+
     <style> 
 
 @font-face
+
 {
+
 font-family:'ff';
+
 src: url('fonts/ff.ttf');
+
 }
+
 </style>
+
 	
+
     <style> 
 
 @font-face
+
 {
-font-family:"64";
-src: url('fonts/64.ttf');
+
+font-family:"58";
+
+src: url('fonts/58.ttf');
+
 }
+
 </style>
+
 </head>
 
 <body bgcolor="#68A2B4">
+
 	<table width="auto" height="30px" border="0">
+
   <tbody>
+
     <tr>
+
       <td><img src="image/FL@216.png" width="80" height="auto" alt="？"/></td>
+
 		<td><p style="font-family:'55'">恩社六班</p></td>
+
     </tr>
+
   </tbody>
+
 </table>
+
+<marquee scrolldelay="200" scrollamount="20"><h2 style="font-family:'58'">欢迎来到广州市培正中学恩社六班官方网站！</h2></marquee>
+
 	<table border="3" bordercolor="black" height="30px" cellspacing="0" cellpadding="3" bgcolor="FFFF00">
+
 <td align="center">
+
 <SPAN id=span_dt_dt></SPAN>
+
 <SCRIPT language=javascript>
+
 function show_date_time(){
+
 window.setTimeout("show_date_time()", 1000);
+
 BirthDay=new Date("6/18/2021 08:00:00");
+
 today=new Date();
+
 timeold=(BirthDay.getTime()-today.getTime());
+
 sectimeold=timeold/1000
+
 secondsold=Math.floor(sectimeold);
+
 msPerDay=24*60*60*1000
+
 e_daysold=timeold/msPerDay
+
 daysold=Math.floor(e_daysold);
+
 e_hrsold=(e_daysold-daysold)*24;
+
 hrsold=Math.floor(e_hrsold);
+
 e_minsold=(e_hrsold-hrsold)*60;
+
 minsold=Math.floor((e_hrsold-hrsold)*60);
+
 seconds=Math.floor((e_minsold-minsold)*60);
+
 span_dt_dt.innerHTML="<font size=6 face='ff'>距中考还有：</font><font size=10 face='ff'>"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒"+"<br></font><br>" ; // 这里你自己改。就是倒计时的样式，字体大小size=4 颜色是color
+
 }
+
 show_date_time();
 
 </SCRIPT>
+
 </td>
+
 </table>
-<marquee scrolldelay="200" scrollamount="20"><font size="+3" face="64">欢迎来到广州市培正中学恩社六班官方网站！</font></marquee>
+
 	<table width="auto" border="0">
+
   <tbody>
+
     <tr>
+
 		<td><a href="./timetable.html" target="new"><img src="image/index/timetable.png" height="100%"></img></a></td>
+
       <td><a href="./notifications.html" target="new"><img src="image/index/notifications.png" height="100%"></a></td>
+
       <td><a href="./schedule.html" target="new"><img src="image/index/schedule.html.png" height="100%"></a></td>
+
     </tr>
+
   </tbody>
+
 </table>
+
 <body>
+
 	<table width="auto" border="0">
+
   <tbody>
+
     <tr>
+
       <td>今日文件:</td>
+
 		<td><a href="./preview_1.html" target="new">恩社六班55届校运会出场音乐</a></td>
+
 		<tr></tr>
+
 		<td>今日媒体：</td>
+
 	  <td><a href="player_01.html">lqq中午の广播</a></td>
+
     </tr>
+
   </tbody>
+
 </table>
+
 <a href="grouping.html"><font size="+5">55届校运会分组名单</font></a>
+
 </body>
+
 </body>
+
 </html>
