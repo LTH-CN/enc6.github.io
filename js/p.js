@@ -7,3 +7,5 @@ function check(){
    window.document.f.submit();
    }else{
    alert("用户名或密码错误");
+}
+      }
