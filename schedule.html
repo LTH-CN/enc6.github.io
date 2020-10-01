@@ -24,8 +24,14 @@ a:hover{text-decoration:none}
 	<h5><font color="#888888">广州市培正中学第55届校运会</font></h5>
 	<h3><font color="#888888">9月27～30日</font></h3>
 	<h5><font color="#888888">按学校新课表上课</font></h5>
-	<h3>10月1日～10月8日</h3>
-	<h5>国庆假期</h5>
+	<script> 
+function changecolor() { 
+	var b=document.getElementById("a").style.color;
+	 if(b=="yellow"){document.getElementById("a").style.color="#A288A2";}
+	  else {document.getElementById("a").style.color="yellow";} }
+	   setInterval("changecolor()",250)//设置循环速度
+	    </script>
+	<h3 id="a"style="color:yellow;">10月1日～10月8日<br /><font size="-1">中秋、国庆假期</font></h3>
 	<h3>10月9日</h3>
 	<h5>按周五课表上课</h5>
 	<h3>10月10日</h3>
@@ -49,3 +55,4 @@ a:hover{text-decoration:none}
 	<h5>散学典礼</h5>
 </body>
 </html>
+
